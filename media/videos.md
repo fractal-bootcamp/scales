@@ -15,6 +15,13 @@ Anyway, that being said, here are some videos that you can watch to understand s
 - [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE) (2 min)  
 - [CS 101 in 13 min](https://www.youtube.com/watch?v=-uleG_Vecis) (13 min)  
 
+### Computer Architecture (how do computers actually work under the hood?):
+- [What's Your Computer Actually Doing?](What's Your Computer Actually Doing?), Tom Scott (7 min) - what's your computer doing underneath the hood?
+
 ### Philosophy (Why do we program? What is programming good for? What can we aspire to build?)
 - [Inventing on Principle](https://vimeo.com/906418692), Bret Victor (54 min -- this is a long talk about the sorts of things we can still invent with computers, not about learning programming) 
 - [Simple Made Easy](https://www.youtube.com/watch?v=F87PtAoJNtg), Rich Hickey (12 min short, or 1 hour in full. I recommend the full talk, but linked to the short one. The long one can be found [here](https://www.youtube.com/watch?v=SxdOUGdseq4))
+
+
+### Algorithms
+- [Quicksort](https://www.youtube.com/watch?v=XE4VP_8Y0BU), Numberphile (3 min) -- short video on quick sort!
