@@ -1,7 +1,7 @@
 ## Videos to watch for understanding computer programs:
 
 > [!IMPORTANT] 
-> BEWARE/DISCLAIMER: watching videos is no replacement for coding. It's an easy way to avoid or escape from the difficult feelings of programming -- unless you're drop dead tired, or busy, I encourage you to find a FUN way to program something with your friends.
+> DISCLAIMER: watching videos is no replacement for coding. It can, at its worst, be a way to avoid the difficult feelings of programming -- unless you're drop dead tired, or busy, I encourage you to find a FUN way to program something with your friends.
 >  It can be "dangerous" to code alone (not really, but ykwim), and one of the reasons is because of feelings of incompetence. You're not incompetent! You just need practice and pleasure.
 >  It can also be "dangerous" to know too much theory without enough practice, or muscle memory. You might consistently be frustrated by how you can never seem to implement the things you're capable of dreaming up. 
 >  If you feel blocked in your coding practice, talk to Andrew about working on a passion project, and he'll help you find a team.
