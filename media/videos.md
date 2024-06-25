@@ -1,9 +1,9 @@
 ## Videos to watch for understanding computer programs:
 
 > [!IMPORTANT] 
-> DISCLAIMER: watching videos is no replacement for coding. It can, at its worst, be a way to avoid the difficult feelings of programming -- unless you're drop dead tired, or busy, I encourage you to find a FUN way to program something with your friends. If you feel blocked in your coding practice, talk to Andrew about working on a passion project, and he'll help you find a team.
+> DISCLAIMER: watching videos is no replacement for coding. It can, at its worst, be a way to avoid the difficult feelings of programming -- That being said, they can be a good way to reset and re-orient.
 
-Anyway, that being said, here are some videos that you can watch to understand software engineering better:
+Here are some videos that you can watch to understand software engineering better:
 
 ### The Basics (fundamental knowledge, and good review for all levels):
 - [Web Dev 101 in 13 minutes](https://www.youtube.com/watch?v=erEgovG9WBs) (13 min)  
