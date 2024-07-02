@@ -12,6 +12,9 @@ Here are some videos that you can watch to understand software engineering bette
 - [Git in 100 seconds](https://www.youtube.com/watch?v=hwP7WQkmECE) (2 min)  
 - [CS 101 in 13 min](https://www.youtube.com/watch?v=-uleG_Vecis) (13 min)  
 
+### React (how react works):
+- [How React Actually Works](https://www.youtube.com/watch?v=za2FZ8QCE18) (13 min)
+
 ### Computer Architecture (how do computers actually work under the hood?):
 - [What's Your Computer Actually Doing?](What's Your Computer Actually Doing?), Tom Scott (7 min) - what's your computer doing underneath the hood?
 
