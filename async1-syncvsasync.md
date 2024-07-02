@@ -174,101 +174,7 @@ Follow these instructions to create and understand various async and sync operat
    ```
 3. Call the function and observe which promise resolves first.
 
-## Example 7: Async Iterators and Generators
-
-1. Create an async generator function:
-   ```javascript
-   async function* asyncNumberGenerator() {
-     yield await Promise.resolve(1);
-     yield await Promise.resolve(2);
-     yield await Promise.resolve(3);
-   }
-   ```
-2. Create a function to use the async generator:
-   ```javascript
-   async function useAsyncGenerator() {
-     for await (const num of asyncNumberGenerator()) {
-       console.log(num);
-     }
-   }
-   ```
-3. Call the function and observe how async generators work.
-
-## Example 8: Async Event Handling
-
-1. Create an AsyncEventEmitter class:
-   ```javascript
-   class AsyncEventEmitter {
-     constructor() {
-       this.listeners = {};
-     }
-
-     on(event, callback) {
-       if (!this.listeners[event]) {
-         this.listeners[event] = [];
-       }
-       this.listeners[event].push(callback);
-     }
-
-     async emit(event, data) {
-       if (this.listeners[event]) {
-         for (const callback of this.listeners[event]) {
-           await callback(data);
-         }
-       }
-     }
-   }
-   ```
-2. Use the AsyncEventEmitter:
-   ```javascript
-   const emitter = new AsyncEventEmitter();
-
-   emitter.on('asyncEvent', async (data) => {
-     await new Promise(resolve => setTimeout(resolve, 1000));
-     console.log('Async event handled:', data);
-   });
-
-   emitter.emit('asyncEvent', 'test data');
-   console.log('After emitting event');
-   ```
-3. Run the code and observe how async events are handled.
-
-## Example 9: Async Iteration with Symbol.asyncIterator
-
-1. Create an AsyncRange class with an async iterator:
-   ```javascript
-   class AsyncRange {
-     constructor(start, end) {
-       this.start = start;
-       this.end = end;
-     }
-
-     [Symbol.asyncIterator]() {
-       let current = this.start;
-       const end = this.end;
-       return {
-         async next() {
-           await new Promise(resolve => setTimeout(resolve, 1000));
-           if (current <= end) {
-             return { value: current++, done: false };
-           }
-           return { done: true };
-         }
-       };
-     }
-   }
-   ```
-2. Create a function to iterate over the AsyncRange:
-   ```javascript
-   async function iterateAsyncRange() {
-     for await (const num of new AsyncRange(1, 3)) {
-       console.log(num);
-     }
-   }
-   ```
-3. Call the function and observe how async iteration works.
-
-## Example 10: Web Workers for CPU-Intensive Tasks
+## (Advanced) Example 7: Web Workers for CPU-Intensive Tasks
 
 Note: This example typically runs in a browser environment.
 
@@ -299,3 +205,185 @@ Note: This example typically runs in a browser environment.
    };
    ```
 3. Run the main script in a browser environment and observe how the worker performs the CPU-intensive task without blocking the main thread.
+
+
+# React and useEffect Examples
+
+These examples demonstrate how to work with async operations in React, particularly using the useEffect hook. Make sure you have a React environment set up before proceeding.
+
+### Example 1: Basic Data Fetching with useEffect
+
+1. Create a new functional component:
+   ```jsx
+   import React, { useState, useEffect } from 'react';
+
+   function DataFetcher() {
+     const [data, setData] = useState(null);
+
+     useEffect(() => {
+       fetch('https://api.example.com/data')
+         .then(response => response.json())
+         .then(result => setData(result))
+         .catch(error => console.error('Error fetching data:', error));
+     }, []);
+
+     if (!data) return <div>Loading...</div>;
+     return <div>{JSON.stringify(data)}</div>;
+   }
+   ```
+2. Use this component in your React app.
+3. Observe how the data is fetched when the component mounts and how the UI updates once the data is available.
+
+### Example 2: Async/Await in useEffect
+
+1. Modify the previous example to use async/await:
+   ```jsx
+   import React, { useState, useEffect } from 'react';
+
+   function AsyncDataFetcher() {
+     const [data, setData] = useState(null);
+
+     useEffect(() => {
+       async function fetchData() {
+         try {
+           const response = await fetch('https://api.example.com/data');
+           const result = await response.json();
+           setData(result);
+         } catch (error) {
+           console.error('Error fetching data:', error);
+         }
+       }
+       fetchData();
+     }, []);
+
+     if (!data) return <div>Loading...</div>;
+     return <div>{JSON.stringify(data)}</div>;
+   }
+   ```
+2. Use this component in your React app.
+3. Notice how the async function is defined inside useEffect and then called immediately.
+
+### Example 3: Cleanup in useEffect with Async Operations
+
+1. Create a component that simulates a long-running async operation:
+   ```jsx
+   import React, { useState, useEffect } from 'react';
+
+   function AsyncCounter() {
+     const [count, setCount] = useState(0);
+
+     useEffect(() => {
+       let isMounted = true;
+       const intervalId = setInterval(() => {
+         if (isMounted) {
+           setCount(prevCount => prevCount + 1);
+         }
+       }, 1000);
+
+       return () => {
+         isMounted = false;
+         clearInterval(intervalId);
+       };
+     }, []);
+
+     return <div>Count: {count}</div>;
+   }
+   ```
+2. Use this component in your React app, perhaps with a toggle to mount/unmount it.
+3. Observe how the cleanup function prevents state updates after the component unmounts.
+
+### Example 4: Debouncing API Calls in useEffect
+
+1. Create a component that fetches data based on user input:
+   ```jsx
+   import React, { useState, useEffect } from 'react';
+
+   function DebouncedSearch() {
+     const [query, setQuery] = useState('');
+     const [results, setResults] = useState([]);
+
+     useEffect(() => {
+       const debounceTimeout = setTimeout(() => {
+         if (query) {
+           fetch(`https://api.example.com/search?q=${query}`)
+             .then(response => response.json())
+             .then(data => setResults(data))
+             .catch(error => console.error('Error searching:', error));
+         }
+       }, 300);
+
+       return () => clearTimeout(debounceTimeout);
+     }, [query]);
+
+     return (
+       <div>
+         <input
+           type="text"
+           value={query}
+           onChange={e => setQuery(e.target.value)}
+           placeholder="Search..."
+         />
+         <ul>
+           {results.map(item => (
+             <li key={item.id}>{item.name}</li>
+           ))}
+         </ul>
+       </div>
+     );
+   }
+   ```
+2. Implement this component in your React app.
+3. Test it by typing in the search box and observe how the API calls are debounced.
+
+### Example 5: Parallel API Calls in useEffect
+
+1. Create a component that fetches data from multiple APIs in parallel:
+   ```jsx
+   import React, { useState, useEffect } from 'react';
+
+   function ParallelDataFetcher() {
+     const [userData, setUserData] = useState(null);
+     const [postsData, setPostsData] = useState(null);
+
+     useEffect(() => {
+       async function fetchData() {
+         try {
+           const [userResponse, postsResponse] = await Promise.all([
+             fetch('https://api.example.com/user'),
+             fetch('https://api.example.com/posts')
+           ]);
+           const userData = await userResponse.json();
+           const postsData = await postsResponse.json();
+           setUserData(userData);
+           setPostsData(postsData);
+         } catch (error) {
+           console.error('Error fetching data:', error);
+         }
+       }
+       fetchData();
+     }, []);
+
+     if (!userData || !postsData) return <div>Loading...</div>;
+     return (
+       <div>
+         <h2>User: {userData.name}</h2>
+         <h3>Posts:</h3>
+         <ul>
+           {postsData.map(post => (
+             <li key={post.id}>{post.title}</li>
+           ))}
+         </ul>
+       </div>
+     );
+   }
+   ```
+2. Implement this component in your React app.
+3. Observe how both API calls are made in parallel, potentially improving load times.
+
+These examples demonstrate key concepts of working with async operations in React:
+
+1. Basic data fetching using useEffect
+2. Using async/await syntax within useEffect
+3. Proper cleanup of async operations to prevent memory leaks
+4. Debouncing API calls for performance optimization
+5. Making parallel API calls for efficiency
