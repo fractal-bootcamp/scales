@@ -4,7 +4,7 @@ Follow these instructions to create and understand various async and sync operat
 
 ## Example 1: Simple Synchronous vs Asynchronous Function
 
-1. Open your JavaScript environment (e.g., a .js file or browser console).
+1. Open your JavaScript environment (e.g., a `index.ts` file to run with bun, probably).
 2. Create a synchronous function:
    ```javascript
    function syncFunction() {
