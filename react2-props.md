@@ -221,3 +221,61 @@ function App() {
   )
 }
 ```
+
+
+9. Stop destructuring props in the function signature on InputField. Verify to yourself that this works exactly the same as the previous example.
+
+```tsx
+
+interface InputFieldProps {
+    placeholder: string;
+    value: string;
+    onChange: (value: string) => void;
+    error?: string;
+}
+
+function InputField(props: InputFieldProps) {
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder={props.placeholder}
+        value={props.value}
+        onChange={(e) => props.onChange(e.target.value)}
+        style={{ borderColor: props.error ? 'red' : undefined }}
+      />
+      {props.error && <p style={{ color: 'red' }}>{props.error}</p>}
+    </div>
+  )
+}
+```
+
+
+
+10.   Instead, destructure props in the function BODY of InputField. Verify to yourself that this works exactly the same as the previous TWO examples.
+
+```tsx
+
+interface InputFieldProps {
+    placeholder: string;
+    value: string;
+    onChange: (value: string) => void;
+    error?: string;
+}
+
+function InputField(props: InputFieldProps) {
+  const { placeholder, value, onChange, error } = props;
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder={placeholder}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        style={{ borderColor: error ? 'red' : undefined }}
+      />
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+    </div>
+  )
+}
+```
