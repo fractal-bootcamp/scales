@@ -6,9 +6,9 @@
 
 3. [Career advice that no one asked me for](https://x.com/gokulns/status/1810598394286497854)
 
-4. [How to be successful](https://blog.samaltman.com/how-to-be-successful) - Sam Altman
+4. [How to do great work](https://www.paulgraham.com/greatwork.html) - Paul Graham
 
-## Advi
+5. [How to be successful](https://blog.samaltman.com/how-to-be-successful) - Sam Altman
 
 ## What to do after bootcamp:
 
