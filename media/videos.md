@@ -16,7 +16,7 @@ Here are some videos that you can watch to understand software engineering bette
 - [How React Actually Works](https://www.youtube.com/watch?v=za2FZ8QCE18) (13 min)
 
 ### Computer Architecture (how do computers actually work under the hood?):
-- [[What's Your Computer Actually Doing?](What's Your Computer Actually Doing?)](https://www.youtube.com/watch?v=Z5JC9Ve1sfI), Tom Scott (7 min) - what's your computer doing underneath the hood?
+- [What's Your Computer Actually Doing?](https://www.youtube.com/watch?v=Z5JC9Ve1sfI), Tom Scott (7 min) - what's your computer doing underneath the hood?
 
 ### Philosophy (Why do we program? What is programming good for? What can we aspire to build?)
 - [Inventing on Principle](https://vimeo.com/906418692), Bret Victor (54 min -- this is a long talk about the sorts of things we can still invent with computers, not about learning programming) 
