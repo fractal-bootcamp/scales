@@ -142,7 +142,7 @@ function getEarliestPublicationYear(state: AppState): number {
 // sort the books by year
 // remember: sort() MODIFIES the array in place
 // if you want a "pure" version, use `toSorted()` instead
-function sortBooksByYear(state: AppState): Book[] {
+function sortBooksByYear(state: AppState): AppState {
   const sortedBooks = [...state.books].sort((a, b) => a.year - b.year);
   return {
     ...state,
@@ -151,7 +151,7 @@ function sortBooksByYear(state: AppState): Book[] {
 }
 
 // example of using toSorted()
-function sortBooksByYear2(state: AppState): Book[] {
+function sortBooksByYear2(state: AppState): AppState {
   return {
     ...state,
     books: state.books.toSorted((a, b) => a.year - b.year)
@@ -160,7 +160,7 @@ function sortBooksByYear2(state: AppState): Book[] {
 
 // remember: reverse() MODIFIES the array in place
 // if you want a "pure" version, use `toReversed()` instead
-function reverseBooks(state: AppState): Book[] {
+function reverseBooks(state: AppState): AppState {
   const reversedBooks = [...state.books].reverse();
   return {
     ...state,
@@ -168,7 +168,7 @@ function reverseBooks(state: AppState): Book[] {
   }
 }
 // example of using toReversed()
-function reverseBooks2(state: AppState): Book[] {
+function reverseBooks2(state: AppState): AppState {
   return {
     ...state,
     books: state.books.toReversed()
@@ -206,7 +206,7 @@ function getAllGenres(state: AppState): string[] {
 }
 
 // get a list of all the authors and titles of all the books
-function getAllAuthorsAndTitles(state: AppState): string[] {
+function getAllAuthorsAndTitles(state: AppState): string[][] {
   return state.books.map(book => [book.author, book.title]);
 }
 
