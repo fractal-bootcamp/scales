@@ -14,4 +14,5 @@
 
 1. [Workatastartup](https://workatastartup.com/) - literally apply to startups
 2. [Recurse Center](https://www.recurse.com) - continue your education for free now that you're el33t.
-3. 
+3. [Buildlist](https://www.buildlist.xyz/) - work at a company building real things
+4. [Pampam City Job Listings](https://www.pampam.city/p/Pd82Tp8aq5EfxTP3yJhu) - get a job in NYC
