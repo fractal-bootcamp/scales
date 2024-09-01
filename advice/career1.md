@@ -18,3 +18,4 @@
 4. [Pampam City Job Listings](https://www.pampam.city/p/Pd82Tp8aq5EfxTP3yJhu) - get a job in NYC
 5. [More curated jobs](https://www.joinprospect.com/) - good curated jobs, including how much they're hiring
 6. [Built in NYC](https://www.builtinnyc.com/) - tech companies in NYC!
+7. [Job Listings on Hacker News](https://nchelluri.github.io/hnjobs/) - Get a job!!
