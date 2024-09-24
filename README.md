@@ -10,3 +10,8 @@ In a chromatic scale practice, do the first level of every scale, then proceed t
 In a sequential scale practice, you focus on just a specific concept, like auth:
 - [auth1, auth2, auth3, auth4...]
 
+### Is there anything else I can do?
+
+Yes, honestly [this website](https://www.executeprogram.com/) is a much more curated "scales" experience, and I highly recommend it for practicing subskills.
+
+- [Execute Program](https://www.executeprogram.com/)
