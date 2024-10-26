@@ -14,6 +14,7 @@ Here are some videos that you can watch to understand software engineering bette
 
 ### React (how react works):
 - [How React Actually Works](https://www.youtube.com/watch?v=za2FZ8QCE18) (13 min)
+- [What is Server-side Rendering, really?](https://www.youtube.com/watch?v=ozI4V_29fj4&list=PLNG_1j3cPCaapCRvpsyQ2CrNtnTtLf2jz&index=7) (24 min)
 
 ### Computer Architecture (how do computers actually work under the hood?):
 - [What's Your Computer Actually Doing?](https://www.youtube.com/watch?v=Z5JC9Ve1sfI), Tom Scott (7 min) - what's your computer doing underneath the hood?
@@ -26,3 +27,4 @@ Here are some videos that you can watch to understand software engineering bette
 
 ### Algorithms
 - [Quicksort](https://www.youtube.com/watch?v=XE4VP_8Y0BU), Numberphile (3 min) -- short video on quick sort!
+
