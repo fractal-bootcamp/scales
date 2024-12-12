@@ -19,3 +19,7 @@
 5. [More curated jobs](https://www.joinprospect.com/) - good curated jobs, including how much they're hiring
 6. [Built in NYC](https://www.builtinnyc.com/) - tech companies in NYC!
 7. [Job Listings on Hacker News](https://nchelluri.github.io/hnjobs/) - Get a job!!
+
+## Don't know how to get someone's email? Do this:
+1. Use the [Apollo Extension](https://chromewebstore.google.com/detail/apolloio-free-b2b-phone-n/alhgpfoeiimagjlnfekdhkjlkiomcapa?hl=en-US)
+2. Send a list of the companies that you need a contact at to us.
