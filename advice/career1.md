@@ -19,6 +19,7 @@
 5. [More curated jobs](https://www.joinprospect.com/) - good curated jobs, including how much they're hiring
 6. [Built in NYC](https://www.builtinnyc.com/) - tech companies in NYC!
 7. [Job Listings on Hacker News](https://nchelluri.github.io/hnjobs/) - Get a job!!
+8. [Career Brew](https://careerbrew.substack.com/p/career-brew-15th-dec-jobs-digest) - tech job digest on substack
 
 ## Don't know how to get someone's email? Do this:
 1. Use the [Apollo Extension](https://chromewebstore.google.com/detail/apolloio-free-b2b-phone-n/alhgpfoeiimagjlnfekdhkjlkiomcapa?hl=en-US)
