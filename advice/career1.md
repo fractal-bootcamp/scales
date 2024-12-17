@@ -21,6 +21,12 @@
 7. [Job Listings on Hacker News](https://nchelluri.github.io/hnjobs/) - Get a job!!
 8. [Career Brew](https://careerbrew.substack.com/p/career-brew-15th-dec-jobs-digest) - tech job digest on substack
 
+## VCs that we know personally, if you want an intro to any company in their portfolio, we can get it:
+
+1. [Betaworks](https://www.betaworks.com/companies) - Betaworks likes us, and we know a lot of people there.
+2. [South Park Commons](https://www.southparkcommons.com/community) - We can get an intro to SPC companies!
+3. [AntlerVC](https://www.antler.co/portfolio) - We host events with Antler, and we have a few students who have worked with their portcos before.
+
 ## Don't know how to get someone's email? Do this:
 1. Use the [Apollo Extension](https://chromewebstore.google.com/detail/apolloio-free-b2b-phone-n/alhgpfoeiimagjlnfekdhkjlkiomcapa?hl=en-US)
 2. Send a list of the companies that you need a contact at to us.
