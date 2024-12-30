@@ -30,3 +30,6 @@
 ## Don't know how to get someone's email? Do this:
 1. Use the [Apollo Extension](https://chromewebstore.google.com/detail/apolloio-free-b2b-phone-n/alhgpfoeiimagjlnfekdhkjlkiomcapa?hl=en-US)
 2. Send a list of the companies that you need a contact at to us.
+
+## If you need a visa, here are startups that sponsor employees:
+1. [Stamplist](https://landing.club/stamplist)
