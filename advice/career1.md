@@ -10,6 +10,10 @@
 
 5. [How to be successful](https://blog.samaltman.com/how-to-be-successful) - Sam Altman
 
+## How to break in:
+
+1. [How I Became A Programmer](https://mattdeboard.net/2011/11/23/how-i-became-a-programmer/)
+
 ## What to do after bootcamp:
 
 1. [Workatastartup](https://workatastartup.com/) - literally apply to startups
