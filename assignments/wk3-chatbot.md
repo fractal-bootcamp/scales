@@ -68,6 +68,8 @@ Create a personal AI chatbot interface that allows users to have conversations, 
   * Vercel AI SDK
 
 ## Resources
+* [Next.JS AI Cookbook Examples](https://sdk.vercel.ai/cookbook)
+* [Next.JS Ai ChatBot Playground Example Code](https://sdk.vercel.ai/playground/anthropic:claude-v3-sonnet)
 * [Next.js Documentation](https://nextjs.org/docs)
 * [Vercel AI SDK Documentation](https://sdk.vercel.ai/docs)
 * [DrizzleORM Documentation](https://orm.drizzle.team/docs/overview)
