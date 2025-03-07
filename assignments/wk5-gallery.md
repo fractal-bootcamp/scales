@@ -18,6 +18,10 @@ eg:
 
 Students build a photo gallery application that fetches and displays large collections of images from public APIs, implementing proper optimization, loading states, and caching.
 
+![image](https://github.com/user-attachments/assets/244ffce9-0328-4cac-a012-79cef518b2bb)
+Example: [Cosmos Public Works](https://public.work/)
+
+
 ## Required Features
 
 1. **Image-Focused Experience**
