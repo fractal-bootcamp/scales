@@ -14,6 +14,8 @@
 
 1. [How I Became A Programmer](https://mattdeboard.net/2011/11/23/how-i-became-a-programmer/)
 
+2. https://x.com/GabrielPeterss4/status/1898566138352820561
+
 ## What to do after bootcamp:
 
 1. [Workatastartup](https://workatastartup.com/) - literally apply to startups
