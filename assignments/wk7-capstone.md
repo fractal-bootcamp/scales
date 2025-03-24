@@ -36,8 +36,6 @@ If Twitter/X isn't your platform, you must create a Substack and publish daily u
 - Honest reflections on your challenges
 - Questions you're wrestling with
 
-Your build-in-public content must tag our course and use the hashtag #DreamAppChallenge.
-
 Building in public isn't optional. It creates accountability, attracts early users, documents your journey, and builds your professional identity.
 
 ## By End of Week Deliverables
