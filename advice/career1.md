@@ -32,6 +32,8 @@
 1. [Betaworks](https://www.betaworks.com/companies) - Betaworks likes us, and we know a lot of people there.
 2. [South Park Commons](https://www.southparkcommons.com/community) - We can get an intro to SPC companies!
 3. [AntlerVC](https://www.antler.co/portfolio) - We host events with Antler, and we have a few students who have worked with their portcos before.
+4. [OnDeck](https://www.joinodf.com/)
+5. [Techstars NYC](https://www.techstars.com/accelerators/nyc)
 
 ## Don't know how to get someone's email? Do this:
 1. Use the [Apollo Extension](https://chromewebstore.google.com/detail/apolloio-free-b2b-phone-n/alhgpfoeiimagjlnfekdhkjlkiomcapa?hl=en-US)
